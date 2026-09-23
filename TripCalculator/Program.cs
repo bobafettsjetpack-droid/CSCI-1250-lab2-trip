@@ -69,7 +69,7 @@ Console.WriteLine("Tax withheld: " + taxWithheld.ToString("C"));
 Console.WriteLine("Take home pay: " + takeHomePay.ToString("C"));
 
 //Part 4
-
+Console.WriteLine("Part 4: The Whole Trip ===");
 
 double tripTotal = fuelCost + pizzaCost;
 double costPerPerson = tripTotal / numberOfPeople;
