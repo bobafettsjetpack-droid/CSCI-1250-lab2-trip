@@ -1,5 +1,6 @@
 ﻿using System.Diagnostics;
 using System.Runtime.InteropServices;
+using System.Security;
 
 /*
 * Name: Aaron Robinson
@@ -94,3 +95,13 @@ Console.WriteLine("Trip total: " + tripTotal.ToString("C"));
 Console.WriteLine("Cost per person: " + costPerPerson.ToString("C"));
 Console.WriteLine("Take home pay per hour: " + takeHomePayPerHour.ToString("C"));
 Console.WriteLine("Hours you must work to cover your share: " + hoursMustWork.ToString("F2"));
+
+
+
+//Part 5?
+
+Console.WriteLine();
+Console.WriteLine("=== Part 5: Financially Detailed ===");
+double costPerMile = (totalMiles / pizzaCost) + totalMiles / milesPerGallon / pricePerGallon; 
+
+Console.WriteLine("Cost per mile: " + costPerMile.ToString("C"));
