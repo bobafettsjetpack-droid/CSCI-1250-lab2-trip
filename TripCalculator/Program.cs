@@ -33,7 +33,9 @@ Console.WriteLine("Fuel cost: " + fuelCost.ToString("C"));
 //Part 2
 System.Console.WriteLine();
 Console.WriteLine("=== Part 2: Pizza Party ===");
+/* Removed for optional stuff
 const int SLICES_PER_PIZZA = 8;
+*/
 
 //asking questions
 Console.Write("How many people are going: ");
@@ -42,11 +44,16 @@ int numberOfPeople = Convert.ToInt32(Console.ReadLine());
 Console.Write("How many pizzas: ");
 int numberOfPizzas = Convert.ToInt32(Console.ReadLine());
 
+Console.Write("How many slices in a pizza: ");
+int slicesPerPizza = Convert.ToInt16(Console.ReadLine());
+
 Console.Write("Price per pizza: ");
 double pricePerPizza = Convert.ToDouble(Console.ReadLine());
 
 //calculating
-int totalSlices = numberOfPizzas * SLICES_PER_PIZZA;
+//int totalSlices = numberOfPizzas * SLICES_PER_PIZZA;
+
+int totalSlices = numberOfPizzas * slicesPerPizza;
 double slicesPerPerson = (double)totalSlices / numberOfPeople;
 double pizzaCost = numberOfPizzas * pricePerPizza;
 
